@@ -1,0 +1,26 @@
+{
+    "name": "maer/kernel-start",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Magnus Eriksson",
+            "email": "mange@reloop.se"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../kernel"
+        }
+    ],
+    "require": {
+        "maer/kernel": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src/"
+        }
+    }
+}
