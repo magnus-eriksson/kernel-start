@@ -1,8 +1,5 @@
 <?php
 
-use App\Entities\User;
-use App\Repos\Pdo\Users;
-use App\Repos\UsersInterface;
 use App\Routes\AppRoutes;
 use App\ServiceProvider;
 use Kernel\Kernel;
