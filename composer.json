@@ -2,17 +2,11 @@
     "name": "maer/kernel-start",
     "type": "project",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Magnus Eriksson",
             "email": "mange@reloop.se"
-        }
-    ],
-    "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../kernel"
         }
     ],
     "require": {

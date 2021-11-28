@@ -1,20 +1,30 @@
 <?php
 
+use App\Entities\User;
+use App\Repos\Pdo\Users;
+use App\Repos\UsersInterface;
+use App\Routes\AppRoutes;
+use App\ServiceProvider;
 use Kernel\Kernel;
-use Maer\Router\Router;
 
 require __DIR__ . '/vendor/autoload.php';
 
+// Instantiate the kernel
 $kernel = new Kernel([
     __DIR__ . '/app/config/config.php',
     __DIR__ . '/app/config/dev.php',
     __DIR__ . '/app/config/prod.php'
 ]);
 
+// Set paths
 $kernel->paths->set('app', __DIR__ . '/app');
 $kernel->paths->set('public', __DIR__ . '/public');
 
-// Load routes
-require $kernel->paths('app') . '/routes.php';
+// Register app specific services
+new ServiceProvider($kernel->ioc);
 
+// Load routes
+new AppRoutes($kernel->router);
+
+// Return the configured kernel instance
 return $kernel;

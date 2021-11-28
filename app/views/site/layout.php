@@ -18,6 +18,10 @@
             font: 24px sans-serif;
             color: #ccc;
         }
+
+        a {
+            color: #9cf;
+        }
     </style>
 </head>
 
