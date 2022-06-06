@@ -2,7 +2,7 @@
     "name": "maer/kernel-start",
     "type": "project",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Magnus Eriksson",
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "maer/kernel": "@dev"
+        "maer/kernel": "^0.1.0"
     },
     "autoload": {
         "psr-4": {
