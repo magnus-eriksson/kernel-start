@@ -1,0 +1,20 @@
+#!/bin/bash
+uiPath="app/ui"
+
+if [ -z $1 ]
+then
+    echo "Using default: site"
+    path="$uiPath/site"
+else
+    path="$uiPath/$1"
+fi
+
+if [ ! -d "$path" ]
+then
+    echo "Path $path does not exist"
+    exit
+fi
+
+cd "$path"
+gulp
+cd -

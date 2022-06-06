@@ -16,5 +16,9 @@
         "psr-4": {
             "App\\": "app/src/"
         }
+    },
+    "scripts": {
+        "npm-install": "./bin/npm-install",
+        "gulp": "./bin/gulp"
     }
 }

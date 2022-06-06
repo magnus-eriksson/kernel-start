@@ -1,0 +1,16 @@
+#!/bin/bash
+
+uiPath="app/ui"
+
+if [ -z $1 ]
+then
+    echo "Using default: site"
+    path="$uiPath/site"
+else
+    echo "Using: $1"
+    path="$uiPath/$1"
+fi
+
+cd "$path"
+npm i
+cd -
