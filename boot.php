@@ -9,8 +9,9 @@ require __DIR__ . '/vendor/autoload.php';
 // Instantiate the kernel
 $kernel = new Kernel([
     __DIR__ . '/app/config/config.php',
+    __DIR__ . '/app/config/ensure.php',
     __DIR__ . '/app/config/dev.php',
-    __DIR__ . '/app/config/prod.php'
+    __DIR__ . '/app/config/prod.php',
 ]);
 
 // Set paths

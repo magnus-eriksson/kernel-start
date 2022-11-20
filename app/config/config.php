@@ -23,7 +23,7 @@ return [
      */
     // If true, error reporting will be set as E_ALL and display_errors turned on
     'debugging' => [
-        'enabled' => true,
+        'enabled' => false,
         // Only used when debugging is disabled. If enabled, E_ALL will be used
         'logLevel' => E_ERROR,
     ],

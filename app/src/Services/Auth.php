@@ -3,15 +3,15 @@
 namespace App\Services;
 
 use App\Entities\User;
-use App\Repos\Pdo\Users;
+use App\Repos\UsersInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class Auth
 {
     /**
-     * @var Users
+     * @var UsersInterface
      */
-    protected Users $users;
+    protected UsersInterface $users;
 
     /**
      * @var Session
@@ -34,10 +34,10 @@ class Auth
 
 
     /**
-     * @param Users $users
+     * @param UsersInterface $users
 
      */
-    public function __construct(Users $users, Session $session)
+    public function __construct(UsersInterface $users, Session $session)
     {
         $this->users = $users;
         $this->session = $session;

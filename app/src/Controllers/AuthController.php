@@ -2,9 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Entities\User;
-use App\Repos\Pdo\Users;
-use App\Repos\UsersInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class AuthController extends AbstractController
@@ -16,8 +13,6 @@ class AuthController extends AbstractController
      */
     public function showAuth(): string
     {
-
-
         $errors = $this->session->getFlashBag()->get('errors');
 
         return $this->render('auth', [

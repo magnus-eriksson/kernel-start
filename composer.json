@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "maer/kernel": "^0.1.0"
+        "maer/kernel": "dev-master"
     },
     "autoload": {
         "psr-4": {
